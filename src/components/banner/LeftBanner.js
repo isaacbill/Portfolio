@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Civil Engineer.", "Architect.", "Site Supervisor."],
+      words: ["Graduate Civil Engineer.", "Quality Engineer.", "Site Supervisor.", "CAD Instructor"],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -26,9 +26,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          I bring a comprehensive foundation in Project Management, Structural Design,
+		      Forensic Engineering, Rehabilitation, and Research. I am adept at adapting 
+		      to new technologies, business practices, and support mechanisms, 
+		      ensuring compliance to the code of ethics and professional conduct. 
         </p>
       </div>
      {/* Media */}
