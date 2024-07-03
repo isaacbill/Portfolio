@@ -16,8 +16,7 @@ const ContactLeft = () => {
           Civil Engineer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          ipsam autem cumque, accusantium dicta odio.
+          Email or call me and lets explore how i can be of service.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+254 701991654</span>
