@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { SiAutodeskrevit,SiAutocad,SiArchicad} from "react-icons/si";
+import { MdEngineering } from "react-icons/md";
 
 const Media = () => {
   return (
@@ -33,16 +34,16 @@ const Media = () => {
         </h2>
         <div className="flex gap-4">
           <span className="bannerIcon">
-            <FaReact />
+            <SiArchicad />
           </span>
           <span className="bannerIcon">
-            <SiNextdotjs />
+            <SiAutodeskrevit />
           </span>
           <span className="bannerIcon">
-            <SiTailwindcss />
+            <SiAutocad />
           </span>
           <span className="bannerIcon">
-            <SiFigma />
+            <MdEngineering />
           </span>
         </div>
       </div>
