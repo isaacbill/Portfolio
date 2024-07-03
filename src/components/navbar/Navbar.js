@@ -45,9 +45,8 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                I bring a comprehensive foundation in Project Management, Structural Design,
+                Forensic Engineering, Rehabilitation, and Research.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
