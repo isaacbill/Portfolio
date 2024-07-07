@@ -11,7 +11,7 @@ const Media = () => {
           Find me in
         </h2>
         <div className="flex gap-4">
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com/Jared.Ongeri.Eng">
             <span className="bannerIcon">
               <FaFacebookF />
             </span>
@@ -21,7 +21,7 @@ const Media = () => {
               <FaTwitter />
             </span>
           </a>
-          <a href="https://www.linkedin.com/in/isaac-okeyo-631a8828b">
+          <a href="https://www.linkedin.com/in/jared-ongeri-52970a254">
             <span className="bannerIcon">
               <FaLinkedinIn />
             </span>
