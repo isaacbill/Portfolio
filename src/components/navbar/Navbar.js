@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
-import { Link } from "react-scroll";
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+import { logo } from "../../assets/index";
 import { navLinksdata } from '../../constants';
 
 const Navbar = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false);
+  
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
@@ -20,14 +21,7 @@ const Navbar = () => {
               className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={_id}
             >
-              <Link
-                activeClass="active"
-                to={link}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
+              <Link to={link}>
                 {title}
               </Link>
             </li>
@@ -45,8 +39,8 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                I bring a comprehensive foundation in Project Management, Structural Design,
-                Forensic Engineering, Rehabilitation, and Research.
+                  I bring a comprehensive foundation in Project Management, Structural Design,
+                  Forensic Engineering, Rehabilitation, and Research.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -55,15 +49,7 @@ const Navbar = () => {
                     key={item._id}
                     className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
                   >
-                    <Link
-                      onClick={() => setShowMenu(false)}
-                      activeClass="active"
-                      to={item.link}
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
+                    <Link to={item.link} onClick={() => setShowMenu(false)}>
                       {item.title}
                     </Link>
                   </li>
@@ -74,15 +60,21 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
+                  <a href='https://www.facebook.com/Jared.Ongeri.Eng'>
                   <span className="bannerIcon">
                     <FaFacebookF />
                   </span>
+                  </a>
+                  <a href='https://www.twitter.com'>
                   <span className="bannerIcon">
                     <FaTwitter />
                   </span>
+                  </a>
+                  <a href='https://www.linkedin.com/in/jared-ongeri-52970a254'>
                   <span className="bannerIcon">
                     <FaLinkedinIn />
                   </span>
+                  </a>
                 </div>
               </div>
               <span
@@ -99,4 +91,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default Navbar;
