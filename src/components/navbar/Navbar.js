@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import { logo } from "../../assets/index";
 import { navLinksdata } from '../../constants';
 
@@ -65,9 +65,9 @@ const Navbar = () => {
                     <FaFacebookF />
                   </span>
                   </a>
-                  <a href='https://www.twitter.com'target="_blank" rel="noopener noreferrer">
+                  <a href='https://wa.me/+254701991654'target="_blank" rel="noopener noreferrer">
                   <span className="bannerIcon">
-                    <FaTwitter />
+                    <FaWhatsapp />
                   </span>
                   </a>
                   <a href='https://www.linkedin.com/in/jared-ongeri-52970a254'target="_blank" rel="noopener noreferrer">

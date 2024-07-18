@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF,  FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import { SiAutodeskrevit, SiAutocad, SiArchicad } from "react-icons/si";
 import { MdEngineering } from "react-icons/md";
 
@@ -16,9 +16,9 @@ const Media = () => {
               <FaFacebookF />
             </span>
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+254701991654" target="_blank" rel="noopener noreferrer">
             <span className="bannerIcon">
-              <FaTwitter />
+              < FaWhatsapp />
             </span>
           </a>
           <a href="https://www.linkedin.com/in/jared-ongeri-52970a254" target="_blank" rel="noopener noreferrer">
