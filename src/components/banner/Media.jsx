@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { SiAutodeskrevit,SiAutocad,SiArchicad} from "react-icons/si";
+import { SiAutodeskrevit, SiAutocad, SiArchicad } from "react-icons/si";
 import { MdEngineering } from "react-icons/md";
 
 const Media = () => {
@@ -11,17 +11,17 @@ const Media = () => {
           Find me in
         </h2>
         <div className="flex gap-4">
-          <a href="https://www.facebook.com/Jared.Ongeri.Eng">
+          <a href="https://www.facebook.com/Jared.Ongeri.Eng" target="_blank" rel="noopener noreferrer">
             <span className="bannerIcon">
               <FaFacebookF />
             </span>
           </a>
-          <a href="https://www.twitter.com">
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
             <span className="bannerIcon">
               <FaTwitter />
             </span>
           </a>
-          <a href="https://www.linkedin.com/in/jared-ongeri-52970a254">
+          <a href="https://www.linkedin.com/in/jared-ongeri-52970a254" target="_blank" rel="noopener noreferrer">
             <span className="bannerIcon">
               <FaLinkedinIn />
             </span>

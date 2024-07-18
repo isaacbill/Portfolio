@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import FooterBottom from "./components/footer/FooterBottom";
@@ -11,21 +11,34 @@ import Testimonial from "./pages/Testimonial";
 import Contact from "./pages/Contact";
 
 function App() {
+  // Custom hook to scroll to the top on route change
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
+
   return (
     <Router>
       <div className="w-full h-auto bg-bodyColor text-lightText px-4">
         <Navbar />
-        <div className="max-w-screen-xl mx-auto">
+        <div id="top" className="max-w-screen-xl mx-auto">
+          {/* Include ScrollToTop component to handle scrolling */}
+          <ScrollToTop />
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        <Footer />
-        <FooterBottom />
+          <Footer />
+          <FooterBottom />
         </div>
       </div>
     </Router>
