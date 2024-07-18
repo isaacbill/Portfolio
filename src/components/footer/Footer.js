@@ -13,7 +13,7 @@ const Footer = () => {
             <FaFacebookF />
           </span>
           </a>
-          <a href='#'target="_blank" rel="noopener noreferrer">
+          <a href='https://wa.me/+254701991654'target="_blank" rel="noopener noreferrer">
           <span className="bannerIcon">
             < FaWhatsapp />
           </span>
