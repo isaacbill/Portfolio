@@ -39,6 +39,7 @@ function App() {
           </Routes>
           <Footer />
           <FooterBottom />
+          
         </div>
       </div>
     </Router>
