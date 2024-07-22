@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Title from '../layouts/Title';
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour, projectFive } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 import Modal from './Modal';
 
@@ -37,12 +37,12 @@ const Projects = () => {
     {
       title: "SPACIOUS 3 BEROOM HIDDED ROOF BUNGALOW",
       des: "Explore a design concept of a 3 bedroom bungalow 120 sq. meters floor-Hidden roof layout. Design and render was done in ArchiCAD. Estimated project cost KSH. 3M",
-      src: projectThree
+      src: projectFour
     },
     {
       title: "4 BEDROOM BUNGALOW",
       des: "Designed a 4 bedroom bungalow for a client. 2 bedrooms ensuite with a spacious living room and kitchen. The floor plan area is 160 Sq. Meters. The estimated project cost is KSH. 3.5M. The project status is complete.",
-      src: projectOne
+      src: projectFive
     },
     {
       title: "CONCEPT UPCOMING",
