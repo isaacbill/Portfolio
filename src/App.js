@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Testimonial from "./pages/Testimonial";
 import Contact from "./pages/Contact";
+import Uploads from "./pages/Uploads";
 
 function App() {
   // Custom hook to scroll to the top on route change
@@ -35,7 +36,8 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/testimonial" element={<Testimonial />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />  
+            <Route path="/services" element={<Uploads />} />             
           </Routes>
           <Footer />
           <FooterBottom />

@@ -29,4 +29,5 @@ export const navLinksdata = [
       title: "Contact",
       link: "/contact",
     },
+    
   ];
