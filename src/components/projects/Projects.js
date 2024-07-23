@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Title from '../layouts/Title';
-import { projectOne, projectTwo, projectThree, projectFour, projectFive } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFive, projectSix, projectSeven } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 import Modal from './Modal';
 
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: "SPACIOUS 3 BEROOM HIDDED ROOF BUNGALOW",
       des: "Explore a design concept of a 3 bedroom bungalow 120 sq. meters floor-Hidden roof layout. Design and render was done in ArchiCAD. Estimated project cost KSH. 3M",
-      src: projectFour
+      src: projectSeven
     },
     {
       title: "4 BEDROOM BUNGALOW",
@@ -47,7 +47,7 @@ const Projects = () => {
     {
       title: "CONCEPT UPCOMING",
       des: "Design of a 4 bedroom house, master bedroom ensuite in Revit+ Artlantis Studio. Quantities takeoff in Planswift. BOQ in excel and Project schedule in MS Project",
-      src: projectTwo
+      src: projectSix
     }
   ];
 

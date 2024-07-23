@@ -2,10 +2,13 @@ import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { logo } from "../../assets/index";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-  const handleExternalRedirect = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+  const navigate = useNavigate();
+
+  const handleInternalRedirect = () => {
+    navigate('/');
   };
 
   return (
@@ -46,16 +49,16 @@ const Footer = () => {
           <li>
             <span
               className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
-              onClick={() => handleExternalRedirect('https://portfolio-isaac-okeyos-projects.vercel.app')}
+              onClick={handleInternalRedirect}
             >
               Go to my portfolio
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
             </span>
           </li>
           <li>
-            <Link to='/services'>
+            <Link to='/Trainings'>
               <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-                Services
+                Training
                 <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
               </span>
             </Link>
