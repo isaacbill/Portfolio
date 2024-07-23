@@ -5,7 +5,7 @@ import ContactLeft from './ContactLeft';
 
 const Contact = () => {
   const [username, setUsername] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("+254"); // Default to Kenyan code
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -20,12 +20,20 @@ const Contact = () => {
   };
   // ========== Email Validation end here ================
 
+  // ========== Phone Number Validation start here ==============
+  const phoneNumberValidation = () => {
+    return String(phoneNumber).match(/^\+254\d{9}$|^07\d{8}$|^01\d{8}$/);
+  };
+  // ========== Phone Number Validation end here ================
+
   const handleSend = (e) => {
     e.preventDefault();
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
       setErrMsg("Phone number is required!");
+    } else if (!phoneNumberValidation(phoneNumber)) {
+      setErrMsg("Phone number must be a valid Kenyan number!");
     } else if (email === "") {
       setErrMsg("Please give your Email!");
     } else if (!emailValidation(email)) {
@@ -44,13 +52,13 @@ const Contact = () => {
         message: message,
       };
 
-      emailjs.send('service_89tosfl', 'template_iycn7ab', templateParams,'Kv_GeajsResgWIZd3')
+      emailjs.send('service_89tosfl', 'template_iycn7ab', templateParams, 'Kv_GeajsResgWIZd3')
         .then((response) => {
           console.log('Email sent:', response.status, response.text);
-          setSuccessMsg(`Thank you dear ${username}, Your Messages has been sent Successfully!`);
-          setErrMsg("");
+          setSuccessMsg(`Thank you dear ${username}, Your Message has been sent Successfully!`);
+          clearMessages();
           setUsername("");
-          setPhoneNumber("");
+          setPhoneNumber("+254");
           setEmail("");
           setSubject("");
           setMessage("");
@@ -58,8 +66,16 @@ const Contact = () => {
         .catch((error) => {
           console.error('There was an error sending the email:', error);
           setErrMsg("There was an error sending your message. Please try again later.");
+          clearMessages();
         });
     }
+  };
+
+  const clearMessages = () => {
+    setTimeout(() => {
+      setErrMsg("");
+      setSuccessMsg("");
+    }, 3000);
   };
 
   return (
@@ -97,7 +113,7 @@ const Contact = () => {
                   <input
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     value={phoneNumber}
-                    className={`${errMsg === "Phone number is required!" && "outline-designColor"} contactInput`}
+                    className={`${(errMsg === "Phone number is required!" || errMsg === "Phone number must be a valid Kenyan number!") && "outline-designColor"} contactInput`}
                     type="text"
                   />
                 </div>
@@ -138,16 +154,6 @@ const Contact = () => {
                   Send Message
                 </button>
               </div>
-              {errMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
-                  {errMsg}
-                </p>
-              )}
-              {successMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
-                  {successMsg}
-                </p>
-              )}
             </form>
           </div>
         </div>
