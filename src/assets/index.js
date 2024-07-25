@@ -8,9 +8,10 @@ import projectSix from "./images/projects/projectSix.jpeg";
 import projectSeven from "./images/projects/projectSeven.jpeg";
 import testimonialOne from "./images/testmonial/testimonialOne.png";
 import testimonialTwo from "./images/testmonial/testimonialTwo.png";
-import quote from "./images/testmonial/quote.png"
-import contactImg from "./images/contact/contactImg.png"
-import jaredImg from "./images/jared.jpeg"
+import quote from "./images/testmonial/quote.png";
+import contactImg from "./images/contact/contactImg.png";
+import jaredImg from "./images/jared.jpeg";
+import BusinessCard from './images/contact/BusinessCard.jpeg';
 
 import slide1 from "./images/slides/image1.png";
 import slide2 from "./images/slides/image2.png";
@@ -45,6 +46,7 @@ export {
   testimonialTwo,
   quote,
   contactImg,
+  BusinessCard,
   slideshowImages,
   slide1,slide2,slide3,slide4,slide5,slide6
 };
