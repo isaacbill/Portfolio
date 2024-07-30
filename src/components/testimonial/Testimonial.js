@@ -136,7 +136,7 @@ const TestimonialsComponent = () => {
     { id: '3', title: '3 BEDROOM COMPLETE PROJECT' },
     { id: '4', title: 'SPACIOUS 3 BEROOM HIDDED ROOF BUNGALOW' },
     { id: '5', title: '4 BEDROOM BUNGALOW' },
-    { id: '6', title: 'CONCEPT UPCOMINGT' },
+    { id: '6', title: 'CONCEPT UPCOMING' },
   ];
 
   return (
