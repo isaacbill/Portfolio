@@ -45,7 +45,7 @@ const Contact = () => {
     } else {
       const templateParams = {
         from_name: username,
-        to_name: 'isaacokeyo007@gmail.com', // replace with your recipient email
+        to_name: 'jaredongeri14@gmail.com', // replace with your recipient email
         phone_number: phoneNumber,
         from_email: email,
         subject: subject,
