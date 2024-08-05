@@ -52,7 +52,7 @@ const Contact = () => {
         message: message,
       };
 
-      emailjs.send('service_89tosfl', 'template_iycn7ab', templateParams, 'Kv_GeajsResgWIZd3')
+      emailjs.send('service_yc850eo', 'template_hjac5hs', templateParams, 'np__O0ILd6dM6PwQr')
         .then((response) => {
           console.log('Email sent:', response.status, response.text);
           setSuccessMsg(`Thank you dear ${username}, Your Message has been sent Successfully!`);
