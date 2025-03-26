@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
 
-const Achievement = () => {
+const Experience = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,60 +11,40 @@ const Achievement = () => {
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Company Experience Section */}
+          {/* Professional Experience Section */}
           <div>
             <div className="flex flex-col gap-4 w-full">
-              <p className="text-sm text-designColor tracking-[4px]">2022 -</p>
-              <h2 className="text-4xl font-bold">Company Experience</h2>
+              <p className="text-sm text-designColor tracking-[4px]">2024 - Present</p>
+              <h2 className="text-4xl font-bold">Professional Experience</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
-                title="Risk Surveys & Management"
-                subTitle="Implemented comprehensive risk assessments at Heritage Insurance."
-                result="Success"
-                des={`As a Risk Surveyor, I specialized in risk profiling, hazard assessment, and loss estimation.
-I successfully conducted enterprise-wide risk surveys, developed safety programs, and provided actionable risk mitigation strategies.
-These efforts enhanced risk management processes, minimized potential losses, and ensured compliance with safety regulations.`}
+                title="Risk Surveyor"
+                subTitle="Heritage Insurance Company - General Insurance (Sept. 2024 - Present)"
+                result="Nairobi, KENYA"
+                des={`1. Profiling of risks presented to the company for insurance and assessing their acceptability.\n2. Inspecting property and machinery based on enterprise all risks to assess their exposure to hazards.\n3. Collating and assessing risk information on-site, including capturing photographic evidence, and estimating the nature, size, and frequency of possible losses throughout the insured’s entire operations.\n4. Preparing detailed reports, establishing Estimated Possible Loss [EPL] and Maximum Possible Loss [MPL] with risk recommendations and safety improvements.\n5. Developing safety programs compatible with the needs and resources of policyholders (Occupational Safety and Health Act).\n6. Advising clients on-site about opportunities and savings on risk improvement programs.`}
               />
               <ResumeCard
-                title="Engineering Structural Design"
-                subTitle="Enhanced interactive structural design and analysis of framed structures."
-                result="Success"
-                des={`At Meijer Engineers, I gained expertise in Steel and Reinforced Concrete design, utilizing software such as Midas Gen, Tekla TSD, and Prokon.
-I improved structural analysis capabilities, ensured compliance with British and EURO codes, and enhanced efficiency in structural detailing.
-This experience strengthened my design, analysis, and technical documentation skills.`}
-              />
-              <ResumeCard
-                title="Material Quality Improvement"
-                subTitle="Developed material quality templates for better sourcing at Edermann."
-                result="Success"
-                des={`Introduced a material quality template that improved concrete quality in batching mix design by 50%.
-Collaborated with suppliers to ensure high-quality materials, enhancing construction integrity and compliance with standards.`}
+                title="Site Quality Engineer"
+                subTitle="Edermann Co. (K) Ltd - Great Wall Gardens Phase 5, Athi River Machakos (Sept. 2023 - Aug. 2024)"
+                result="Athi River, KENYA"
+                des={`1. Achieved 90% effectiveness in preparing BBS, estimation of cast-in-place material, and ensuring as-built specifications onsite.\n2. Collaborated with the survey team to set out, inspect, and supervise invert levels installations for sewer lines, and curbs at 100% efficiency.\n3. Conducted daily quality control for all building materials and engineering site activities.\n4. Achieved 100% efficiency in preparing comprehensive daily, weekly, and monthly inspection reports, summarizing construction activities and progress.`}
               />
             </div>
           </div>
 
-          {/* Job Experience Section */}
+          {/* Training Experience Section */}
           <div>
             <div className="flex flex-col gap-4 w-full">
-              <p className="text-sm text-designColor tracking-[4px]">2022 - </p>
-              <h2 className="text-4xl font-bold">Job Experience</h2>
+              <p className="text-sm text-designColor tracking-[4px]">2023</p>
+              <h2 className="text-4xl font-bold">Trainer Experience</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
-                title="Project Management"
-                subTitle="Supervised execution and quality control at Edermann."
-                result="Success"
-                des={`Achieved 90% effectiveness in preparing BBS, estimating cast-in-place material, and ensuring compliance with site specifications.
-Collaborated with survey teams to achieve 100% efficiency in invert levels installation for sewer lines and curbs.
-Generated detailed reports to track project progress and ensure successful execution.`}
-              />
-              <ResumeCard
-                title="Client Satisfaction"
-                subTitle="99% On-time project delivery record."
-                result="Success"
-                des={`Consistently adhered to client design specifications and ensured on-time project delivery, significantly enhancing client satisfaction.
-Maintained high-quality standards in all projects, leading to repeat business and strong professional relationships.`}
+                title="ArchiCAD Instructor"
+                subTitle="Qubit Institute of Technology (July 2023 - Aug. 2023)"
+                result="Machakos, KENYA"
+                des={`As a Graphisoft ArchiCAD Instructor, I guided students in mastering this powerful BIM software.\nMy approach emphasized hands-on training, focusing on 3D modeling, collaboration, and data management. I tailored classes for a wide range of skills, from beginners to advanced users, promoting creativity and technical proficiency. My goal was to empower students with the tools to deliver efficient, innovative architectural designs.`}
               />
             </div>
           </div>
@@ -74,4 +54,4 @@ Maintained high-quality standards in all projects, leading to repeat business an
   );
 };
 
-export default Achievement;
+export default Experience;
