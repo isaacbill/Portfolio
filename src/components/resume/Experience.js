@@ -14,7 +14,7 @@ const Experience = () => {
           {/* Professional Experience Section */}
           <div>
             <div className="flex flex-col gap-4 w-full">
-              <p className="text-sm text-designColor tracking-[4px]">2024 - Present</p>
+              <p className="text-sm text-designColor tracking-[4px]">2022 - </p>
               <h2 className="text-4xl font-bold">Professional Experience</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">

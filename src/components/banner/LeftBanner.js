@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Graduate Civil Engineer.", "Quality Engineer.", "Site Supervisor.", "CAD Instructor"],
+      words: ["Civil Engineer.", "Risk Surveyor.", "Site Supervisor.", "CAD Instructor"],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -27,7 +27,7 @@ const LeftBanner = () => {
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
           I bring a comprehensive foundation in Project Management, Structural Design,
-		      Forensic Engineering, Rehabilitation, and Research. I am adept at adapting 
+		      Forensic Engineering,Risk survey, Rehabilitation, and Research. I am adept at adapting 
 		      to new technologies, business practices, and support mechanisms, 
 		      ensuring compliance to the code of ethics and professional conduct. 
         </p>
