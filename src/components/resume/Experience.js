@@ -30,6 +30,12 @@ const Experience = () => {
                 result="Athi River, KENYA"
                 des={`1. Achieved 90% effectiveness in preparing BBS, estimation of cast-in-place material, and ensuring as-built specifications onsite.\n2. Collaborated with the survey team to set out, inspect, and supervise invert levels installations for sewer lines, and curbs at 100% efficiency.\n3. Conducted daily quality control for all building materials and engineering site activities.\n4. Achieved 100% efficiency in preparing comprehensive daily, weekly, and monthly inspection reports, summarizing construction activities and progress.`}
               />
+              <ResumeCard
+                title="Graduate Trainee (Structural Engineering)"
+                subTitle="Meijer Engineers - Nairobi (Mar. 2023 - June 2023)"
+                result="Nairobi, KENYA"
+                des={`1. Analyzed and produced detailed design calculation reports.\n2. Gained 100% skill in the interpretation and production of detailed technical drawings.\n3. Took part in the review of structural drawings and design reports.`}
+              />
             </div>
           </div>
 
