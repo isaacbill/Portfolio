@@ -19,35 +19,27 @@ const Achievement = () => {
             </div>
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
+                title="Risk Surveys & Management"
+                subTitle="Implemented comprehensive risk assessments at Heritage Insurance."
+                result="Success"
+                des={`As a Risk Surveyor, I specialized in risk profiling, hazard assessment, and loss estimation.
+I successfully conducted enterprise-wide risk surveys, developed safety programs, and provided actionable risk mitigation strategies.
+These efforts enhanced risk management processes, minimized potential losses, and ensured compliance with safety regulations.`}
+              />
+              <ResumeCard
                 title="Engineering Structural Design"
-                subTitle="Enhanced interactive structural design and analysis of framed structures...."
+                subTitle="Enhanced interactive structural design and analysis of framed structures."
                 result="Success"
-                des={`During my internship at Meijer Engineers, I gained valuable skills in Steel and Reinforced Concrete 
-                I performed structural analysis using software like Midas Gen, Tekla Tedds, Prokon and Tekla TSD,
-                designed various structural elements, and ensured compliance with industry standards.\n
-                I developed proficiency in material selection, connection design,\n
-                I also learned design codes of practice (British and EURO codes), concrete mix design, reinforcement 
-                detailing, and quality control methods.\nAdditionally, I enhanced my project management, technical 
-                documentation, and problem-solving skills, ensuring regulatory and safety compliance.This experience
-                provided a solid foundation in structural engineering and practical industry knowledge.`}
+                des={`At Meijer Engineers, I gained expertise in Steel and Reinforced Concrete design, utilizing software such as Midas Gen, Tekla TSD, and Prokon.
+I improved structural analysis capabilities, ensured compliance with British and EURO codes, and enhanced efficiency in structural detailing.
+This experience strengthened my design, analysis, and technical documentation skills.`}
               />
               <ResumeCard
-                title="Architectural and Structural Drawings Production"
-                subTitle="Developed Skill Report Writing and Documentation"
+                title="Material Quality Improvement"
+                subTitle="Developed material quality templates for better sourcing at Edermann."
                 result="Success"
-                des={`I developed the skill to create precise and detailed blueprints, 3D models, and 
-                Understanding software interfaces at Meijer Engineers, utilizing various commands and functions, and implementing industry
-                standards were key competencies I acquired.\nMy previous experience enhanced my ability to translate 
-                conceptual designs into accurate digital representations efficiently.\nI also honed my problem-solving 
-                skills to address design challenges, ensured compliance with building codes, and improved communication 
-                through clear, professional drawings.\nMastering these skills led to increased productivity and the production 
-                of high-quality architectural documentation.`}
-              />
-              <ResumeCard
-                title="Client Satisfaction"
-                subTitle="99% Delivery On-time delivery Record"
-                result="Success"
-                des="Throughout my work experience, I adhered to client design specification and delivered on time as per the code requirement, significantly contributing to client satisfaction."
+                des={`Introduced a material quality template that improved concrete quality in batching mix design by 50%.
+Collaborated with suppliers to ensure high-quality materials, enhancing construction integrity and compliance with standards.`}
               />
             </div>
           </div>
@@ -61,14 +53,18 @@ const Achievement = () => {
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
                 title="Project Management"
-                subTitle="Quantities estimation."
+                subTitle="Supervised execution and quality control at Edermann."
                 result="Success"
-                des={`At Edermann, I developed expertise in accurately assessing project needs, calculating the required workforce,
-                and estimating material quantities.\nThis involved analyzing blueprints, specifications, and project scopes to 
-                create detailed and precise estimates. I employed industry-standard methodologies and tools to ensure accuracy
-                and efficiency. My ability to forecast costs, manage resources, and align estimates with budgets contributed to
-                successful project planning and execution.\nThis skill set enhanced project timelines, controlled expenses, and 
-                improved overall project outcomes, demonstrating my proficiency in project management and estimation.`}
+                des={`Achieved 90% effectiveness in preparing BBS, estimating cast-in-place material, and ensuring compliance with site specifications.
+Collaborated with survey teams to achieve 100% efficiency in invert levels installation for sewer lines and curbs.
+Generated detailed reports to track project progress and ensure successful execution.`}
+              />
+              <ResumeCard
+                title="Client Satisfaction"
+                subTitle="99% On-time project delivery record."
+                result="Success"
+                des={`Consistently adhered to client design specifications and ensured on-time project delivery, significantly enhancing client satisfaction.
+Maintained high-quality standards in all projects, leading to repeat business and strong professional relationships.`}
               />
             </div>
           </div>
