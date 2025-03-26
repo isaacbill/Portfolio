@@ -10,19 +10,19 @@ const Education = () => {
       className="py-12 font-titleFont"
     >
       <div className="container mx-auto px-4">
-        <div className="flex flex-col gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Education Section */}
           <div>
             <div className="flex flex-col gap-4 w-full">
-              <p className="text-sm text-designColor tracking-[4px]">2005 - 2023</p>
-              <h2 className="text-3xl md:text-4xl font-bold">Education</h2>
+              <p className="text-sm text-designColor tracking-[4px]">2017 - 2022</p>
+              <h2 className="text-4xl font-bold">Education</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
-                title="BSc Civil Engineering"
+                title="Bachelor of Science in Civil Engineering"
                 subTitle="Machakos University (2017 - 2022)"
                 result="3.90/4"
-                des="The training provided me with the fundamental skills of a civil engineer, to explore more in the field of science, technology."
+                des="The training provided me with the fundamental skills of a civil engineer, to explore more in the field of science and technology."
               />
               <ResumeCard
                 title="Secondary School Education"
@@ -32,11 +32,12 @@ const Education = () => {
               />
             </div>
           </div>
-         {/* Certifications Section */}
-         <div>
+
+          {/* Certifications Section */}
+          <div>
             <div className="flex flex-col gap-4 w-full">
               <p className="text-sm text-designColor tracking-[4px]">Certifications</p>
-              <h2 className="text-3xl md:text-4xl font-bold">Certifications</h2>
+              <h2 className="text-4xl font-bold">Certifications</h2>
             </div>
             <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
               <ResumeCard
@@ -63,6 +64,6 @@ const Education = () => {
       </div>
     </motion.div>
   );
-}
+};
 
 export default Education;
